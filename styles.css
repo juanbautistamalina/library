@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    overflow: auto;
+}
+
+body{
+    background-image: url(img/libreria.png);
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.capa{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ddd;
+    opacity: 0.2; 
+    background-size: cover;
+    position: absolute;
+}
+
+.contenedor{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 20px;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+#btn-add{
+    width: 100px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 2em;
+    background-color: #FFAE00;
+    border-radius: 20px;
+    border: 5px solid #000;
+    position: fixed;
+    right: 30px;
+    bottom: 50px;
+    transition: background-color .3s ease-in-out;
+}
+
+#btn-add:hover{
+    background-color: #CC8800;
+}
+
+
+/* Estilos de Libro */
+.libro{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 5px solid #222;
+    flex-shrink: 0;
+}
+
+.info{
+    padding: 3px;
+    text-align: center;
+}
+
+.info h1{
+    font-size: 1.3em;
+}
+
+.info h2{
+    font-size: 1.2em;
+}
+
+.info h3{
+     font-size: 1.1em;
+}
+
+
+.libro img{
+    position: absolute;
+    top: -28px;
+    left: -53px;
+    width: 150px;
+    height: 200px;   
+}
+
+
+/* VENTANA AÑADIR LIBRO*/
+.fondo-oscuro{
+    background-color: #888;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    opacity: 0.6;
+}
+
+.modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 30px;
+    max-width: 600px;
+    min-width: 300px;
+    height: 400px;
+    background-color: #ddd;
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.modal input{
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.modal label{
+    width: 40%;
+    font-size: 1.5em;
+    margin: auto;
+}
+
+.close{
+    border-radius: 10px;
+    border: 2px solid #222;
+    width: 30px;
+    height: 30px;
+    background-color: #ff6961;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+
+.add{
+    background-color: #77dd77;
+    width: 200px;
+    height: 50px;
+    margin: auto;
+    font-size: 1.5em;
+    border-radius: 15px;
+    border: 2px solid #222;
+    transition: background-color .2s ease-in-out;
+}
+
+.add:hover{
+    background-color: #55bb55;
+
+}
+
+
+.div-titulo, .div-autor, .div-paginas, .div-estado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* CHECKBOX */
+.div-estado input{
+    height: 30px;
+}
